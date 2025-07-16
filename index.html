@@ -4,29 +4,29 @@
   <meta charset="UTF-8">
   <title>Word Definition Finder</title>
   <style>
-    #tooltip {
-      position: absolute;
-      background-color: #f9f9f9;
-      border: 1px solid #ccc;
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input, button {
       padding: 8px;
-      display: none;
-      z-index: 1000;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    #definitionBox {
+      margin-top: 20px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h2>Highlight any word to get its definition</h2>
-  <p>
-    You can highlight any word in this paragraph and see its definition using an online dictionary API.
-    <h2>Type a word to get its definition</h2>
-<input type="text" id="wordInput" placeholder="Enter a word" />
-<button onclick="getDefinition()">Search</button>
 
-<p id="definitionBox"></p>
+  <h2>Type a word to get its definition</h2>
 
-  </p>
+  <input type="text" id="wordInput" placeholder="Enter a word" />
+  <button onclick="getDefinition()">Search</button>
 
-  <div id="tooltip"></div>
+  <p id="definitionBox"></p>
 
   <script src="script.js"></script>
 </body>
